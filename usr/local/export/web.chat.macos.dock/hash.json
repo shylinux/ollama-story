@@ -1,0 +1,42 @@
+{
+  "50de9bc68c93dc32d8c7c90593471760": {
+    "meta": {
+      "icon": "usr/icons/Safari.png",
+      "index": "web.chat.iframe",
+      "name": "Safari",
+      "time": "2025-02-08 09:20:30.383"
+    }
+  },
+  "514d8a494f087c0d549b9536c2ef3bd9": {
+    "meta": {
+      "icon": "usr/icons/Terminal.png",
+      "index": "web.code.xterm",
+      "name": "Terminal",
+      "time": "2025-02-08 09:20:30.383"
+    }
+  },
+  "a5255f07d36fc90fe78a719b0bdb943b": {
+    "meta": {
+      "icon": "usr/icons/vimer.png",
+      "index": "web.code.vimer",
+      "name": "vimer",
+      "time": "2025-02-08 09:20:30.384"
+    }
+  },
+  "ba9f11ecc3497d9993b933fdc2bd61e5": {
+    "meta": {
+      "icon": "usr/icons/git.png",
+      "index": "web.code.git.status",
+      "name": "git",
+      "time": "2025-02-08 09:20:30.383"
+    }
+  },
+  "d151508da8d36994e1635f7875594424": {
+    "meta": {
+      "icon": "usr/icons/Finder.png",
+      "index": "web.chat.macos.finder",
+      "name": "Finder",
+      "time": "2025-02-08 09:20:30.383"
+    }
+  }
+}
