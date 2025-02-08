@@ -1,0 +1,5 @@
+$output>div.message { padding:20px; overflow:auto; }
+$output>div.message>div.request { background-color:#94ec69; padding:10px; float:right; }
+$output>div.message>div.request>span { float:right; }
+$output>div.message>div.response { white-space:break-spaces; padding:0px; clear:both; }
+$output>div.request { padding:20px; }

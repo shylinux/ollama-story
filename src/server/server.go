@@ -12,4 +12,4 @@ func (s server) List(m *ice.Message, arg ...string) {
 	s.Hash.List(m, arg...)
 }
 
-func init() { ice.Cmd("web.chat.server.server", server{}) }
+func init() { ice.Cmd("web.chat.ollama.server", server{}) }

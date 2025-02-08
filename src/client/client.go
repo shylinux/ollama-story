@@ -1,15 +1,23 @@
 package client
 
-import "shylinux.com/x/ice"
+import (
+	"shylinux.com/x/ice"
+	"shylinux.com/x/icebergs/base/cli"
+)
 
 type client struct {
-	ice.Hash
-
-	list string `name:"list hash auto" help:"client"`
+	list string `name:"list NAME auto" help:"大模型"`
 }
 
 func (s client) List(m *ice.Message, arg ...string) {
-	s.Hash.List(m, arg...)
+	if len(arg) == 0 {
+		m.SplitIndex(s.cmdx(m, "list"))
+	} else if len(arg) == 1 {
+		m.Echo(s.cmdx(m, "show", arg[0]))
+	}
+}
+func (s client) cmdx(m *ice.Message, arg ...string) string {
+	return m.Cmdx(cli.SYSTEM, "ollama", arg)
 }
 
-func init() { ice.Cmd("web.chat.client.client", client{}) }
+func init() { ice.Cmd("web.chat.ollama.client", client{}) }
