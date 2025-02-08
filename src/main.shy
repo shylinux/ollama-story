@@ -1,53 +1,12 @@
-title "ContextOS"
-
-chapter "实践"
-label `
-code wiki chat team mall
-linux nginx docker redis mysql
-bash git golang vim tmux
+title "ollama-story"
+refer `
+官网 https://ollama.com/
+源码 https://github.com/ollama/ollama
+模型 https://ollama.com/library/deepseek-r1
 `
-
-chapter "理论"
-label `集群化 模块化 自动化`
-
-chapter "项目"
-label `
-matrix release program
-intshell icebergs volcanos
-contexts toolkits learning
+chapter "DeepSeek"
+refer `
+官网 https://www.deepseek.com/
+简介 https://blog.csdn.net/qq_40999403/article/details/139320266
+帖子 https://bbs.shylinux.com/forum.php?mod=viewthread&tid=6&page=1&extra=#pid23
 `
-
-section "火山架"
-field "趋势图" web.code.git.trends args `volcanos`
-field "架构图" web.code.git.spides args `volcanos`
-
-section "冰山架"
-field "趋势图" web.code.git.trends args `icebergs`
-field "架构图" web.code.git.spides args `icebergs`
-label `
-ctx mdb web aaa
-lex yac ssh gdb
-tcp nfs cli log
-`
-chain `
-web
-	code
-	wiki
-		chart
-	chat
-		macos
-		oauth
-		location
-	team
-	mall
-`
-label `
-websocket webview qrcode xterm ssh git
-vim bash tmux alpha input lex yac
-node java coder github chrome
-wx lark wework
-` compact true
-
-section "神农架"
-field "趋势图" web.code.git.trends args `intshell`
-field "架构图" web.code.git.spides args `intshell`

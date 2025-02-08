@@ -11,13 +11,14 @@ type client struct {
 
 func (s client) List(m *ice.Message, arg ...string) {
 	if len(arg) == 0 {
-		m.SplitIndex(s.cmdx(m, "list"))
-	} else if len(arg) == 1 {
-		m.Echo(s.cmdx(m, "show", arg[0]))
+		m.SplitIndex(s.cmdx(m, ice.LIST))
+	} else {
+		m.Echo(s.cmdx(m, ice.SHOW, arg[0]))
 	}
-}
-func (s client) cmdx(m *ice.Message, arg ...string) string {
-	return m.Cmdx(cli.SYSTEM, "ollama", arg)
 }
 
 func init() { ice.Cmd("web.chat.ollama.client", client{}) }
+
+func (s client) cmdx(m *ice.Message, arg ...string) string {
+	return m.Cmdx(cli.SYSTEM, "ollama", arg)
+}

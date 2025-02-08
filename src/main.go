@@ -1,7 +1,10 @@
 package main
 
-import "shylinux.com/x/ice"
-import _ "shylinux.com/x/ollama-story/src/server"
-import _ "shylinux.com/x/ollama-story/src/client"
+import (
+	"shylinux.com/x/ice"
+	_ "shylinux.com/x/icebergs/misc/md"
+	_ "shylinux.com/x/ollama-story/src/client"
+	_ "shylinux.com/x/ollama-story/src/server"
+)
 
 func main() { print(ice.Run()) }

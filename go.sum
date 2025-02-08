@@ -1,3 +1,5 @@
+github.com/gomarkdown/markdown v0.0.0-20250207164621-7a1f277a159e h1:ESHlT0RVZphh4JGBz49I5R6nTdC8Qyc08vU25GQHzzQ=
+github.com/gomarkdown/markdown v0.0.0-20250207164621-7a1f277a159e/go.mod h1:JDGcbDT52eL4fju3sZ4TeHGsQwhG9nbDV21aMyhwPoA=
 shylinux.com/x/go-git/v5 v5.6.7 h1:WD5QSco7m3QooPCgdvQ6/GyGIFPun8C+hex5N41LYlk=
 shylinux.com/x/go-git/v5 v5.6.7/go.mod h1:Qb0lA+uIrofZg8NQerhYcJHgGWixFqvS6p3aJ/L5Nlk=
 shylinux.com/x/go-qrcode v0.0.3 h1:RMo+Vidbgq3HatLBj7DDXcTbTLFUwzis5K7TqBkD38U=

@@ -9,19 +9,20 @@ import (
 )
 
 type chat struct {
-	list string `name:"list name auto" help:"大模型对话"`
+	client client
+	list   string `name:"list list" help:"大模型对话"`
 }
 
 func (s chat) Request(m *ice.Message, arg ...string) {
-	m.Optionv(web.SPIDE_STREAM, func(text string) { web.PushNoticeGrow(m.Message, text) })
+	m.Optionv(web.SPIDE_STREAM, func(text string) { web.PushNoticeGrow(m.Message, m.Option("which"), text) })
 	m.Cmdy(web.SPIDE, ice.DEV, web.SPIDE_STREAM, http.MethodPost, "http://localhost:11434/api/chat",
-		web.SPIDE_DATA, kit.Format(kit.Dict("model", "deepseek-r1", "stream", true,
+		web.SPIDE_DATA, kit.Format(kit.Dict("model", m.Option("model"), "stream", true,
 			"messages", kit.List(kit.Dict("role", "user", "content", arg[0])),
 		)),
 	)
 }
 func (s chat) List(m *ice.Message, arg ...string) {
-	m.Display("").DisplayCSS("")
+	m.Cmdy(s.client).Display("").DisplayCSS("")
 }
 
-func init() { ice.CodeModCmd(chat{}) }
+func init() { ice.Cmd("web.chat.ollama.chat", chat{}) }

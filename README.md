@@ -1,19 +1,23 @@
-# ContextOS
-ContextOS 通过集群化、模块化、自动化的方式，只用一个 20M 大小的程序文件，就可以在各种设备上，一键启动完整的云计算服务与云研发环境。
+# ollama-story
+基于 ContextOS 开发的 ollama 部署工具与应用界面。
 
-## 源码安装
-### 克隆编译
+## 安装 ContextOS
+首先安装 ContextOS <a>https://shylinux.com</a>
+
+## 安装 ollama-story
+打开 ContextOS 的应用商店，下载 20250208-ollama-story。
 ```sh
-git clone https://shylinux.com/x/ContextOS
-cd ContextOS; source etc/miss.sh
+open http://localhost:9020/c/store?debug=true#2025-ContextOS
 ```
 
-### 启动服务
+## 使用 ollama-story
+打开 web.chat.ollama.chat 的应用。
 ```sh
-ish_miss_serve
+open http://localhost:9020/s/20250208-ollama-story/c/web.chat.ollama.chat?debug=true
 ```
 
-### 访问网页
+## 查看 ollama-story
+打开 web.chat.ollama.chat 的源码。
 ```sh
-open http://localhost:9020
+open http://localhost:9020/s/20250208-ollama-story/c/vimer?path=src/&file=client/chat.go&line=1&debug=true#src/:client/chat.go:24
 ```
