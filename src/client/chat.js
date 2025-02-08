@@ -8,8 +8,8 @@ Volcanos(chat.ONIMPORT, {
 	},
 	content: function(can, target) {
 		var ui = can.page.Append(can, can.ui.content, [
-			{view: chat.MESSAGE, list: [{text: "有什么问题尽管问吧！"}]},
-			{view: chat.REQUEST, list: [
+			{view: "message", list: [{text: "有什么问题尽管问吧！"}]},
+			{view: "request", list: [
 				{type: html.TEXTAREA, onkeydown: function(event) {
 					if (event.key == code.ENTER) {
 						can.onaction.request(event, can, event.target.value), event.target.value = "", can.onkeymap.prevent(event)
@@ -30,9 +30,9 @@ Volcanos(chat.ONIMPORT, {
 })
 Volcanos(chat.ONACTION, {
 	request: function(event, can, text) {
-		can.page.Append(can, can.ui.message, [{view: chat.REQUEST, list: [{text: text}]}])
-		var response = can.page.Append(can, can.ui.message, [{view: chat.RESPONSE}])._target; can.ui.responseList.push(response)
+		can.page.Append(can, can.ui.message, [{view: "request", list: [{text: text}]}])
+		var response = can.page.Append(can, can.ui.message, [{view: "response"}])._target; can.ui.responseList.push(response)
 		can.request(event, {which: ""+can.ui.responseList.length, model: can.db.model})
-		can.runAction(event, chat.REQUEST, [text], function(msg) {})
+		can.runAction(event, "request", [text], function(msg) {})
 	},
 })

@@ -7,6 +7,14 @@
       "time": "2025-02-08 09:20:30.381"
     }
   },
+  "937681425ca043f9908761fbcdf3c813": {
+    "meta": {
+      "icon": "src/main.png",
+      "index": "web.chat.ollama.chat",
+      "name": "chat",
+      "time": "2025-02-08 15:27:08.564"
+    }
+  },
   "adf694a4d378bcc855218c464fecb7d9": {
     "meta": {
       "icon": "usr/icons/Messages.png",
