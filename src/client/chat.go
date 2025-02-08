@@ -10,7 +10,7 @@ import (
 
 type chat struct {
 	client client
-	list   string `name:"list list" help:"大模型对话"`
+	list   string `name:"list list" help:"大模型对话" icon:"src/main.png"`
 }
 
 func (s chat) Request(m *ice.Message, arg ...string) {
