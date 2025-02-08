@@ -1,4 +1,4 @@
-module github.com/shylinux/ollama-story
+module shylinux.com/x/ollama-story
 
 go 1.13
 
