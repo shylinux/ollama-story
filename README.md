@@ -10,17 +10,17 @@ https://shylinux.com
 ## 安装 ollama-story
 打开 ContextOS 的应用商店，下载 20250208-ollama-story。
 ```sh
-http://localhost:9020/c/store?debug=true#2025-ContextOS
+http://localhost:9020/c/store#2025-ContextOS
 ```
 
 ## 使用 ollama-story
 打开 web.chat.ollama.chat 的应用。
 ```sh
-http://localhost:9020/s/20250208-ollama-story/c/web.chat.ollama.chat?debug=true
+http://localhost:9020/s/20250208-ollama-story/c/web.chat.ollama.chat
 ```
 
 ## 查看 ollama-story
 打开 web.chat.ollama.chat 的源码。
 ```sh
-http://localhost:9020/s/20250208-ollama-story/c/vimer?path=src/&file=client/chat.go&line=1&debug=true#src/:client/chat.go:24
+http://localhost:9020/s/20250208-ollama-story/c/vimer?path=src/&file=client/chat.go&line=1#src/:client/chat.go:24
 ```

@@ -3,10 +3,20 @@ refer `
 官网 https://ollama.com/
 源码 https://github.com/ollama/ollama
 模型 https://ollama.com/library/deepseek-r1
+应用 https://feizhuke.com/
 `
 chapter "DeepSeek"
 refer `
 官网 https://www.deepseek.com/
 简介 https://blog.csdn.net/qq_40999403/article/details/139320266
 帖子 https://bbs.shylinux.com/forum.php?mod=viewthread&tid=6&page=1&extra=#pid23
+`
+
+chapter "常用模型"
+refer `
+字节豆包 https://www.doubao.com/
+腾讯元宝 https://yuanbao.tencent.com/
+通义千问 https://tongyi.aliyun.com/
+文心一言 https://yiyan.baidu.com/
+月之暗面 https://kimi.moonshot.cn/
 `
