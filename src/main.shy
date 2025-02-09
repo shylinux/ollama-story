@@ -20,3 +20,7 @@ refer `
 文心一言 https://yiyan.baidu.com/
 月之暗面 https://kimi.moonshot.cn/
 `
+chapter "外部依赖"
+refer `
+https://github.com/showdownjs/showdown
+`

@@ -15,11 +15,9 @@ type chat struct {
 
 func (s chat) Request(m *ice.Message, arg ...string) {
 	m.Optionv(web.SPIDE_STREAM, func(text string) { web.PushNoticeGrow(m.Message, m.Option("which"), text) })
-	m.Cmdy(web.SPIDE, ice.DEV, web.SPIDE_STREAM, http.MethodPost, "http://localhost:11434/api/chat",
-		web.SPIDE_DATA, kit.Format(kit.Dict("model", m.Option("model"), "stream", true,
-			"messages", kit.List(kit.Dict("role", "user", "content", arg[0])),
-		)),
-	)
+	m.Cmdy(web.SPIDE, ice.DEV, web.SPIDE_STREAM, http.MethodPost, "http://localhost:11434/api/chat", web.SPIDE_DATA, kit.Format(kit.Dict(
+		"model", m.Option("model"), "stream", true, "messages", kit.List(kit.Dict("role", "user", "content", arg[0])),
+	)))
 }
 func (s chat) List(m *ice.Message, arg ...string) {
 	m.Cmdy(s.client).Display("").DisplayCSS("")
