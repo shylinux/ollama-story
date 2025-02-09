@@ -1,6 +1,6 @@
-$content { padding:20px; }
+$content { padding:10px 20px; }
 $content>div.message { padding:0px; overflow:auto; }
 $content>div.message>div.request { background-color:#94ec69; color:black; padding:10px; float:right; clear:both; }
 $content>div.message>div.request>span { float:right; }
 $content>div.message>div.response { white-space:break-spaces; padding:0px; clear:both; }
-$content>div.request { padding-top:20px; }
+$content>div.request { padding-top:10px; }
